@@ -16,7 +16,7 @@ return new class extends Migration
         $table->string('titulo');
         $table->string('descricao');
         $table->string('imagem');
-        $table->decimal('valor',5,2);
+        $table->decimal('valor', 10, 2);
         $table->enum('publicado',['sim','não'])->default('não');
         $table->timestamps();
             
